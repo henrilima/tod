@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/ico.png" type="image/png">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <title>Verdade ou Desafio</title>
+</head>
+<body>
+    <main>
+        <h1>Verdade ou Desafio</h1>
+        <p>diferenciado...</p>
+
+        <button onclick="start()">Iniciar</button>
+    </main>
+
+    <section id="sct01" class="sct01">
+        <div class="loader">
+            <div class="spinner">
+                <div class="spinner sp2"></div>
+            </div>
+            <p id="text">Carregando</p>
+        </div>
+    </section>
+
+    <section id="sct02" class="sct02">
+        <div id="image-container">
+            <img src="./assets/i1.png" alt="Image 1">
+            <img src="./assets/i2.png" alt="Image 2">
+            <img src="./assets/i3.png" alt="Image 3">
+            <img src="./assets/i4.png" alt="Image 4">
+            <img src="./assets/i5.png" alt="Image 5">
+            <img src="./assets/i6.png" alt="Image 6">
+            <img src="./assets/i7.png" alt="Image 7">
+            <img src="./assets/i8.png" alt="Image 8">
+        </div>   
+        <h2 id="nome"></h2>    
+        <p id="descricao"></p>  
+        
+        <button id="mostrarPergunta" onclick="liberarPergunta()">Vamos a pergunta</button>
+        <button id="rodarNovamente" onclick="rolarDados()">Rodar novamente</button>
+    </section>
+
+    <section id="sct03" class="sct03">
+        <h2 id="titulo"></h2>
+        <p id="pergunta"></p>
+
+        <button id="respostaConcluida" onclick="reiniciar()">Concluído</button>
+    </section>
+    
+    <script src="./javascript/perguntas.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
